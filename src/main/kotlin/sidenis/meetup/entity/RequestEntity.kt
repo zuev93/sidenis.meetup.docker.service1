@@ -1,5 +1,6 @@
 package sidenis.meetup.entity
 
+import sidenis.meetup.dto.CalcResponse
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
@@ -10,5 +11,5 @@ class RequestEntity(
         @GeneratedValue
         var id: Long? = null,
         var user: String? = null,
-        var calcResult: Pair<Double, String?> = Pair(0.0, null)
+        var calcResult: CalcResponse? = null
 )
