@@ -19,5 +19,5 @@ open class MainService(val repostiory: RequestRepository) {
 
     private fun mapEntity(entity: RequestEntity) = Pair(entity.id!!, entity.calcResult)
 
-    private fun remoteCalc(number: Int) = RestTemplate().getForEntity("http://service2/calc/$number", Double::class.java).body ?: 0.0
+    private fun remoteCalc(number: Int) = RestTemplate().getForEntity("http://service2:8080/calc/$number", Double::class.java).body ?: 0.0
 }
