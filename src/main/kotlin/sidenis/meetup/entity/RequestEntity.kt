@@ -10,5 +10,5 @@ class RequestEntity(
         @GeneratedValue
         var id: Long? = null,
         var user: String? = null,
-        var calcResult: Double = 0.0
+        var calcResult: Pair<Double, String?> = Pair(0.0, null)
 )
