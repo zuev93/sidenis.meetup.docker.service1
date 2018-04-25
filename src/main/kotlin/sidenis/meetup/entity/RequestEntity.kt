@@ -11,5 +11,6 @@ class RequestEntity(
         @GeneratedValue
         var id: Long? = null,
         var user: String? = null,
-        var calcResult: CalcResponse? = null
+        var calcResultValue: Double? = null,
+        var calcedByNode: String? = null
 )

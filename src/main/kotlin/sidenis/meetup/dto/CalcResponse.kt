@@ -1,4 +1,4 @@
 package sidenis.meetup.dto
 
-class CalcResponse(val first: Double = 0.0,
+class CalcResponse(val first: Double? = null,
                    val second: String? = null)
